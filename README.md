@@ -1,7 +1,7 @@
 # Pokedex-Project
 
-Site do Anime Pokemon que mostra os personagem e suas descriçoes.<br>
-Foi desenvolvido utilizando HTML, CSS e Js com o intuito de aprofundar meus conhecimentos nos mesmo.
-Tambem foi utilizado a PokeAPI, uma API publica que fornece todas a insformações necessárias. Ao utilizar esse recurso pude aprender mais sobre sua integração com os sistema.
+Site dedicado ao universo do anime Pokémon, exibindo detalhes sobre seus personagens, acompanhados de suas descrições. 
+Este site foi criado por meio da aplicação de HTML, CSS e JavaScript, com o propósito de aprimorar minha compreensão dessas tecnologias. 
+Além disso, integrei a PokeAPI, uma API pública que disponibiliza todas as informações essenciais sobre o mundo Pokémon. Ao explorar esse recurso, adquiri conhecimentos valiosos sobre sua integração com sistemas.
 
 Para acessa-lo <a href = 'https://gabrielconsalter.github.io/Pokedex-Project/'>clique aqui</a>.
