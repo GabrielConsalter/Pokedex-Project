@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-poke {
+    height: 100vh;
+    width: 100%;
+}
+
+.page {
+    display: block;
+}
+
+.imagem-fundo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.conteudo-dev {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo-pokemon {
+    background-image: url('../image/logo.png');
+    background-size: cover;
+    height: 160px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.rede {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.rede:hover {
+    color: #CE1C24;
+}
+
+.dev {
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.pokedex-container {
+    position: absolute;
+    border-radius: 20px;
+    top: 10vh;
+    right: 20%;
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 50%;
+    z-index: 1;
+}
+
+.pokedex-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #CE1C24;
+    width: 50%;
+    height: 80vh;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+.lights {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+svg {
+    width: 50%;
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+polyline {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.light-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 106px;
+    height: 106px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+    margin: 20px;
+}
+
+.light-p1 {
+    background-color: #3298cb;
+    width: 86px;
+    height: 86px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+}
+
+.light-s {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.light-s1 {
+    background-color: #ff0000;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 20px;
+}
+
+.light-s2 {
+    background-color: #fecb65;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 20px;
+}
+
+.light-s3 {
+    background-color: #32cb65;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 20px;
+}
+
+.display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: lightgray;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-left-radius: 50px;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.img-screen {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 80%;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.pokemon-name {
+    color: black;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.buttons-container {
+    height: 20%;
+}
+
+.buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-music {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #585858;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.button-music.play {
+    display: flex;
+}
+
+.music { 
+    width: 20px;
+    height: 20px;
+}
+
+.music:hover {
+    width: 22px;
+    height: 22px;
+}
+
+#musica {
+    display: none;
+}
+
+.detalhe0 {
+    background-color: #ff0000;
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 15%;
+    height: 10px;
+}
+
+.detalhe1 {
+    background-color: lightgray;
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 15%;
+    height: 10px;
+}
+
+
+.buttons-select {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+    cursor: pointer;
+    background-color: #585858;
+    border-radius: 20px 10px 10px 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 45%;
+    height: 35px;
+}
+
+.button-previous {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+    cursor: pointer;
+    background-color: #585858;
+    border-radius: 10px 20px 20px 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 45%;
+    height: 35px;
+}
+
+.botao-selecionar {
+    width: 20px;
+    height: 20px;
+}
+
+.botao-selecionar:hover {
+    width: 22px;
+    height: 22px;
+}
+
+.inverter {
+    scale: -1;
+}
+
+.pokedex-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #CE1C24;
+    width: 50%;
+    height: 80vh;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-left: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.top-bar {
+    height: 146px;
+}
+
+.display-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-info {
+    background-color: lightgray;
+    height: 180px;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.list-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.info {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.list-ability {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px 5px;
+}
+
+.quadrados-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.quadrados {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    justify-items: center;
+}
+
+.quadrado {
+    width: 55px;
+    height: 55px;
+    background-color: #3298cb;
+    box-shadow: inset -2px -2px #7ca9f7;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 7px;
+    overflow: hidden;
+    line-height: 15px;
+}
+
+.bottom-bar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info-bottom-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-bottom {
+    background-color: lightgray;
+    width: 30%;
+    height: 50px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+

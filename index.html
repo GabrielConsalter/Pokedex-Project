@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Project</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="shortcut icon" href="./src/image/pokebola.webp" type="image/x-icon">
+</head>
+<body>
+    <main class="page-poke">
+        <div class="page">
+            <img class="imagem-fundo" src="./src/image/background7.jpg" alt="">
+        </div>
+        <div class="conteudo-dev">
+            <i class="logo-pokemon"></i>
+            <div class="redes">
+                <a href="https://www.instagram.com/gabriel_consalter" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl rede"></i>
+                </a>
+                <a href="https://github.com/GabrielConsalter" target="_blank">
+                    <i class="fa-brands fa-github fa-2xl rede"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gabriel-augusto-consalter-57954116b" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-2xl rede"></i>
+                </a>
+            </div>
+            <div class="dev">
+                <span>Desenvolvido por</span>
+                <span>© Gabriel Consalter</span>
+            </div>
+       </div>
+        <div class="pokedex-container">
+            <div class="pokedex-left">
+                <div class="lights-container">
+                    <svg>
+                        <polyline points="0,140 120,140 160,60 600,60"/>
+                    </svg>
+                    <div class="lights">
+                        <div class="light-p">
+                            <div class="light-p1"></div>
+                        </div>
+                        <div class="light-s">
+                            <div class="light-s1"></div>
+                            <div class="light-s2"></div>
+                            <div class="light-s3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-container">
+                    <div class="display" id="display">
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <div class="buttons">
+                        <button class="button-music play">
+                            <img class="music" src="./src/image/play.png" alt="">
+                        </button>
+                        <button class="button-music pause">
+                            <img class="music" src="./src/image/pausa.png" alt="">
+                        </button>
+                        <audio id="musica" controls src="./src/audio/theme.mp3"></audio>
+                        <div class="detalhe0"></div>
+                        <div class="detalhe1"></div>
+                        <div class="buttons-select">
+                            <button class="button-previous" id="back-button" disabled>
+                                <img class="botao-selecionar inverter" src="./src/image/play.png" alt="">
+                            </button> 
+                            <button class="button-next" id="next-button" disabled>
+                                <img class="botao-selecionar" src="./src/image/play.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pokedex-right">
+                <div class="top-bar">
+                    <svg>
+                        <polyline points="0,60 290,60 330,140 600,140"/>
+                        0,140 120,140 160,60 405,60
+                    </svg>
+                </div>
+                <div class="display-info-container">
+                    <div class="display-info" id="display-info">
+                    </div>
+                </div>
+                <div class="quadrados-container">
+                    <div class="quadrados" id="quadrados"></div>
+                </div>
+                <div class="bottom-bar">
+                    <div class="info-bottom-container" id="info-bottom-container"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/be1926d606.js" crossorigin="anonymous"></script>   
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
